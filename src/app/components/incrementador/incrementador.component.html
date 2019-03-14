@@ -1,0 +1,10 @@
+<h3 class="card-title">{{ leyenda }}</h3>
+<div class="input-group">
+    <span class="input-group-btn">
+    <button class="btn btn-primary" type="button" (click)="cambiarValor(-5)"><i class="mdi mdi-minus"></i></button>
+  </span>
+    <input type="number" class="form-control" placeholder="algo" aria-label="algo" name="porcentaje" [(ngModel)]="porcentaje" min="1" max="100" (ngModelChange)="onChanges($event)" #txtprogress>
+    <span class="input-group-btn">
+    <button class="btn btn-primary" type="button" (click)="cambiarValor(+5)"><i class="mdi mdi-plus"></i></button>
+  </span>
+</div>
